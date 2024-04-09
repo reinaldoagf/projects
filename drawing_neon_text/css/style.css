@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Delicious:wght@300;400;700&display=swap");
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #030d22;
+}
+
+.svg-wrapper {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.svg {
+  width: 100vw;
+  height: 15vw;
+  overflow: visible;
+}
+
+.text {
+  font-size: calc(8vw + 1vh);
+  font-family: "Delicious Handrawn", cursive;
+  font-weight: 600;
+  stroke-width: 2px;
+  animation: drawText 8s ease-in-out infinite alternate;
+}
+
+@keyframes drawText {
+  0%,
+  10% {
+    fill: none;
+    stroke: blueviolet;
+    stroke-dasharray: 50% 100%;
+    stroke-dashoffset: 50%;
+  }
+
+  70% {
+    fill: blueviolet00;
+    stroke: blueviolet;
+    stroke-dasharray: 50% 0%;
+    stroke-dashoffset: 0%;
+  }
+
+  80% {    
+    text-shadow: none;
+  }
+
+  80%,
+  100% {
+    fill: none;
+    stroke: blueviolet;
+  }
+
+  100% {
+    /* Añadir efecto de sombra de texto */
+    text-shadow: 0 0 5px blueviolet, 
+      0 0 15px blueviolet, 
+      0 0 25px blueviolet, 
+      0 0 35px blueviolet, 
+      0 0 45px blueviolet, 
+      0 0 55px blueviolet, 
+      0 0 65px blueviolet;
+  }
+}
