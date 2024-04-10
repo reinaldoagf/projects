@@ -48,7 +48,6 @@ body {
   }
 
   70% {
-    fill: blueviolet00;
     stroke: blueviolet;
     stroke-dasharray: 50% 0%;
     stroke-dashoffset: 0%;
