@@ -60,21 +60,6 @@ body {
 }
 
 @keyframes light {
-  /* 50% {
-    background: rgba(0, 0, 0, 0.6);
-  }
-  60% {
-    background: rgba(0, 0, 0, 0.7);
- }
-  65% {
-    background: rgba(0, 0, 0, 0.8);
- }
-  67% {
-    background: rgba(0, 0, 0, 0.9);
- }
-  70% {
-    background: rgba(0, 0, 0, 0.8);
- } */
  0%,100%  {
   background: rgba(0, 100, 200, 0.8);
 }
